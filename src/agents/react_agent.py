@@ -7,7 +7,7 @@ from src.tools.math_tools import multiply, divide
 
 model = ChatOpenAI(
     model="gpt-5.6",
-    api_key=OPENAI_API_KEY
+    api_key=xxxxxxxxxxxxxx
 )
 
 tools = [
