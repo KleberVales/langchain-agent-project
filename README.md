@@ -166,5 +166,23 @@ def divide(a: float, b: float) -> float:
 
 These functions are converted into LangChain tools using the `@tool` decorator.
 
+### 4. Agent
+
+The tools are registered with the agent:
+
+```python
+tools = [
+    multiply,
+    divide
+]
+
+agent = create_agent(
+    model=model,
+    tools=tools
+)
+```
+
+This allows the LLM to decide when it needs to invoke one of the available tools.
+
 
 
