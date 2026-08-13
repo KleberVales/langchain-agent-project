@@ -26,6 +26,6 @@ The project uses LangChain's create_agent API to connect the model and tools.
 
 The project follows a simple separation of responsibilities:
 
-``text
+```text
 ┌──────────────────────┐ │ User Input │ └──────────┬───────────┘ │ ▼ ┌──────────────────────┐ │ LangChain Agent │ │ │ │ ReAct Pattern │ └──────────┬───────────┘ │ ┌─────────┴─────────┐ │ │ ▼ ▼ ┌────────────────┐ ┌────────────────┐ │ multiply │ │ divide │ │ Tool │ │ Tool │ └────────────────┘ └────────────────┘ │ │ └─────────┬─────────┘ │ ▼ ┌──────────────────────┐ │ Final Answer │ └──────────────────────┘
-``
+```
