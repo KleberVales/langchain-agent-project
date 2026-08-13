@@ -21,3 +21,5 @@ The agent can determine that it needs to:
 3. Return 40
 
 The project uses LangChain's create_agent API to connect the model and tools.
+
+## 🏗️ Architecture
