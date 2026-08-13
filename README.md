@@ -78,3 +78,38 @@ The project follows a simple separation of responsibilities:
 
 The project's dependencies are defined in `requirements.txt`.
 
+---
+
+## 📁 Project Structure
+
+```text
+langchain-agent-project/
+│
+├── src/
+│   ├── agents/
+│   │   ├── __init__.py
+│   │   └── react_agent.py
+│   │
+│   ├── config/
+│   │   ├── __init__.py
+│   │   └── settings.py
+│   │
+│   ├── tools/
+│   │   ├── __init__.py
+│   │   └── math_tools.py
+│   │
+│   ├── __init__.py
+│   └── main.py
+│
+├── testes/
+│   ├── __init__.py
+│   └── test_agent.py
+│
+├── .env
+├── .gitignore
+├── requirements.txt
+└── README.md
+```
+
+The repository separates the agent, configuration, tools, application entry point, and tests into dedicated modules.
+
