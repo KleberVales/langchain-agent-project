@@ -205,5 +205,44 @@ The final message from the agent is then printed to the console.
 
 ---
 
+## 🔄 Agent Flow
+
+A simplified execution flow looks like this:
+
+```text
+User
+ │
+ │ "What is 15 multiplied by 8 and divided by 3?"
+ ▼
+LLM
+ │
+ │ Determines that multiplication is required
+ ▼
+multiply(15, 8)
+ │
+ │ 120
+ ▼
+LLM
+ │
+ │ Determines that division is required
+ ▼
+divide(120, 3)
+ │
+ │ 40
+ ▼
+LLM
+ │
+ │ Generates final response
+ ▼
+User
+ │
+ └── 40
+```
+
+This illustrates one of the key differences between a standard LLM call and an **agentic application**: the agent can dynamically decide to invoke external tools as part of solving a problem.
+
+---
+
+
 
 
