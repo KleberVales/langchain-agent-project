@@ -113,3 +113,22 @@ langchain-agent-project/
 
 The repository separates the agent, configuration, tools, application entry point, and tests into dedicated modules.
 
+---
+
+## ⚙️ How It Works
+
+### 1. Configuration
+
+The project loads the OpenAI API key from an environment variable using `python-dotenv`.
+
+```python
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+```
+
+The application validates that the API key is available before starting.
+
