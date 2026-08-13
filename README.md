@@ -143,5 +143,28 @@ model = ChatOpenAI(
 )
 ```
 
+### 3. Tools
+
+Two custom tools are available to the agent:
+
+```python
+@tool
+def multiply(a: float, b: float) -> float:
+    return a * b
+```
+
+and:
+
+```python
+@tool
+def divide(a: float, b: float) -> float:
+    if b == 0:
+        raise ValueError("Cannot divide by zero.")
+
+    return a / b
+```
+
+These functions are converted into LangChain tools using the `@tool` decorator.
+
 
 
