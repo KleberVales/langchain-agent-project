@@ -13,3 +13,5 @@ The agent receives a natural-language request, determines which tool is required
 For example:
 
 Question: What is 15 multiplied by 8 and divided by 3?
+
+The agent can determine that it needs to:
