@@ -184,5 +184,26 @@ agent = create_agent(
 
 This allows the LLM to decide when it needs to invoke one of the available tools.
 
+### 5. Execution
+
+The application sends the user question to the agent:
+
+```python
+response = agent.invoke(
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": question
+            }
+        ]
+    }
+)
+```
+
+The final message from the agent is then printed to the console.
+
+---
+
 
 
