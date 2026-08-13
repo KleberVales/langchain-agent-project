@@ -132,3 +132,16 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 The application validates that the API key is available before starting.
 
+### 2. Model
+
+The agent uses OpenAI's `gpt-5.6` model through `ChatOpenAI`.
+
+```python
+model = ChatOpenAI(
+    model="gpt-5.6",
+    api_key=OPENAI_API_KEY
+)
+```
+
+
+
