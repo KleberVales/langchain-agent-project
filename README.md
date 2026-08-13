@@ -23,3 +23,5 @@ The agent can determine that it needs to:
 The project uses LangChain's create_agent API to connect the model and tools.
 
 ## 🏗️ Architecture
+
+The project follows a simple separation of responsibilities:
