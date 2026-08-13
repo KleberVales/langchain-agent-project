@@ -54,6 +54,11 @@ The project follows a simple separation of responsibilities:
                         └──────────────────────┘
 ```
 
-## 🛠️ Technologies
+### Main components
 
+- **Model** — OpenAI `gpt-5.6`
+- **Agent** — LangChain agent created with `create_agent`
+- **Tools** — Custom multiplication and division functions
+- **Configuration** — Environment variables loaded with `python-dotenv`
+- **Tests** — `pytest` tests for the mathematical tools
 
