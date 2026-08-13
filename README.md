@@ -62,3 +62,19 @@ The project follows a simple separation of responsibilities:
 - **Configuration** — Environment variables loaded with `python-dotenv`
 - **Tests** — `pytest` tests for the mathematical tools
 
+---
+
+## 🛠️ Technologies
+
+| Technology | Purpose |
+|---|---|
+| Python | Application language |
+| LangChain | Agent orchestration and tool integration |
+| LangChain OpenAI | OpenAI model integration |
+| OpenAI | LLM / reasoning engine |
+| LangGraph | Agent runtime infrastructure used by LangChain |
+| python-dotenv | Environment variable management |
+| pytest | Automated testing |
+
+The project's dependencies are defined in `requirements.txt`.
+
