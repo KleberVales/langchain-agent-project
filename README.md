@@ -18,3 +18,4 @@ The agent can determine that it needs to:
 
 1. Multiply 15 × 8
 2. Divide the result by 3
+3. Return 40
